@@ -1,6 +1,6 @@
 [Desktop Entry]
 Exec=qtparted
-Name=QTParted
+Name=QtParted
 Icon=qtparted
 Terminal=false
 Type=Application
@@ -10,4 +10,4 @@ GenericName[fr]=Partitionner un disque
 GenericName[fi]=Kiintolevyn partitiointityökalu
 GenericName[de]=Partitionierungstool
 Encoding=UTF-8
-Categories=Application;System;QT;
+Categories=Application;System;QT;Qt;Filesystem;
