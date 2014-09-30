@@ -1,0 +1,28 @@
+/* XPM */
+static const char *tool_property[] = {
+/* columns rows colors chars-per-pixel */
+"16 16 6 1",
+"  c Gray0",
+". c Gray19",
+"X c #580058005800",
+"o c #800080008000",
+"O c #a000a000a000",
+"+ c None",
+/* pixels */
+"++++++++.....+++",
+"+++++++.OOO.++++",
+"++++++.OoX.+++++",
+"+++++.OoX.+++++.",
+"+++++.OX.+++++..",
+"+++++.OoX.+++.O.",
+"+++++.OooX.+.OX.",
+"+++++.OoooX.OoX.",
+"++++.OoooooOoX.+",
+"+++.OoooXXXXX.++",
+"++.OoooX.....+++",
+"+.OoooX.++++++++",
+".OoooX.+++++++++",
+".OooX.++++++++++",
+".OXX.+++++++++++",
+"....++++++++++++"
+};

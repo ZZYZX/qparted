@@ -1,4 +1,5 @@
 qtparted
 ========
 
-Mirror of qtparted, additional patches applied
+Mirror of qtparted 0.6.0, additional patches applied.
+

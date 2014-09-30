@@ -1,0 +1,55 @@
+TODO for QtParted (http://qtparted.sourceforge.net)
+***************************************************
+
+1) Source Code:
+===============
+
+MINOR-TODO (trivial changes):
+-----------------------------
+- Support for Resier4 (detection only)
+- Support for flags: lba, ...
+  (boot and hidden already supported)
+- Conversion from ext2 to ext3
+- Set maximal length of text in format/create dialogs:
+  maxname for xfs label = 12
+  maxname for ext2/ext3 = 16
+- allow to resize ext3 without converting to ext2
+- Check if the partition is mounted. Before working on the disk,
+  it would be possible to use the isMounted() function. It tells
+  us whether or not a partition is mounted.
+- configure script: check Qt is multithreaded (qt-mt)
+
+MAJOR-TODO (bug features):
+--------------------------
+- Merge convertfs
+- Bad blocks checking
+
+
+BUGS:
+-----
+- When shrinking an extended partition, the minimal size is not correct
+
+General TODO:
+-------------
+- in the GUI, new column:
+  FreeSpace (there is "total space", and "used space" only)
+  but the user can need to have the "free space"
+  Make the user choice which columns to show in the list
+- Change the partition flags
+  In the current version, we have "set active"
+  - Add "hide partition" and "show partition"
+- Graphical interface
+  - CreatePartitionDialog:
+    - new layout with dialog-resizing support
+    - graphical size selector (like in the resizeDialog)
+  -
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+2) Administration jobs:
+=======================
+- make the debian files work for creating DEB packages
+- test and build the Redhat packages
+- create a mailing list:
+  partgui-announce@lists.sourceforge.net
+  Announce new versions. Private list (low trafic)

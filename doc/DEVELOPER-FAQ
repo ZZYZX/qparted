@@ -1,0 +1,56 @@
+FAQ for DEVELOPERS
+==================
+
+[01]. How to compile sources ?
+------------------------------
+*) Run cmake . && make && make install
+   Or, if you wish to customize settings,
+   Run ccmake . && make && make install
+
+[02]. How to make a new release ?
+---------------------------------
+1) Update several text files, located at the root of the sources:
+   - ChangeLog: update the changes of the new release
+   - qtparted.lsm: just change the version
+   - CMakeLists.txt: just change the version
+2) Get the last CVS version:
+   cvs co <cvs-module-name>
+   Don't keep your current CVS local version
+   in order to remove trash/backup files
+3) Create the administration files
+   make -f Makefile.dist
+4) Test and clean
+   ./configure <your-options> && make && make install
+   make distclean
+5) Create the archive
+   cd ..
+   mv qtparted-cvs qtparted-x.y.z
+   tar cfj qtparted-x.y.z.tar.bz2 qtparted-x.y.z
+   try again to compile from files from the archive
+6) Put a tag in CVS. Respect the syntax. Here is an example
+   (dots "." are not allowed in a CVS tag, then we use "_")
+   cd qtparted-cvs
+   cvs tag TAG_20030401_RELEASE_0_4_0
+   (Example for 1st-April-2003 - version 0.4.0)
+7) Put the archive on sourceforge.net
+8) Announce the version on the web site and on 
+   http://www.freshmeat.net
+
+[03]. How does the build system works ?
+---------------------------------------
+It's based on the official GNU autoconf/automake tools.
+* Only configure.ac and Makefile.am matters
+  Don't edit Makefile, Makefile.in, or the ./configure script
+* configure.ac -----(autoconf)----> configure
+  Makefile.am ------(automake)----> Makefile.in
+  Makefile.in ------(configure)---> Makefile
+  
+[04]. What is the qttypes.h file ?
+----------------------------------
+One big proble with the C language, is that types can change.
+For example sizeof(int)=4 somestimes, and 8 on another computer.
+The ./configure creates this file, in order to provide constant
+types. It was taken from the glib administration files.
+For example u16 is always an "unsigned 16 bits integer", and
+s32 is always an "signed 32 bits integer".
+It matters when you save data inside a file.

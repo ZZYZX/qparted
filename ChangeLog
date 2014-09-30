@@ -1,0 +1,33 @@
+ChangeLog for QtParted:
+-----------------------
+* 0.6.0 (2012-04-07)
+  - Support Parted >= 3.0
+  - ext2, ext3, ext4, xfs, jfs, btrfs, FAT FS creation support
+    without relying on parted filesystem code
+  - Some (but still nowhere near enough) code cleanups
+  - Improved UI for editing external tools
+
+* 0.5.0 (2011-02-17)
+  - Switch to Qt 4.x
+
+* 0.4.x (never released, if you really need it grab it from SVN)
+  - More code cleanups
+  - Support parted >= 1.7.x
+
+* 0.4.5 (2005-08-12)
+  - Fix up "&" signs being displayed in the menus w/ Qt 3.3.4
+  - Add workaround for parted bug showing CD-ROMs as partitioning targets
+  - Some code cleanups
+  - Some bugfixes
+
+* 0.4.4 (2004-04-25)
+  - Added hidden flags for FAT/NTFS filesystem
+  - Added support for read label (Fran?ois Dupoux)
+  - Added Catalan translation (Dani Hernandez)
+
+* 0.4.3 (2004-03-13)
+  - Improved stability with fs wrappers
+  - New ntfsresize wrapper (tested with 1.8 and 1.9)
+
+* 0.4.2 (2004-03-04)
+  - Fixed compilation errors with Qt-3.3

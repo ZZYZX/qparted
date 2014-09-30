@@ -1,0 +1,73 @@
+QTParted
+---------
+Homepage:...http://qtparted.sourceforge.net/
+Date:.......23/08/2003  Updated..... 17/02/2011
+
+Author:                        Updated:
+  Vanni Brutto                 Bernhard Rosenkraenzer
+  zanac4ever@virgilio.it       bero@arklinux.ch
+
+
+  For installation or compiling instructions, see the INSTALL file.
+
+  This program is licensed under the GNU GPL.  See the COPYING file for
+  more information.
+
+
+Changes
+-------
+  See the changelog ;-)
+
+Description
+-----------
+
+  QTParted is a Partition Magic clone written in C++ using the Qt toolkit.
+  I don't know if it exist some other software that do the same... i think
+  that exist some commercial project, but i don't know any GPLed software!
+
+  Of course you use this software AT YOUR OWN RISK!
+
+  Plans for future version
+   - btrfs support
+   - badblocks check
+   - Add jfs resize support
+   - Code clean up of the SpinBox widget
+   - Get rid of Q3 compat class usage
+   - copy partition (not so trivial) :(
+   - Bugfixes :-)
+
+
+How you can help
+----------------
+
+  Comments
+  --------
+  I like comments, even if they are a simple thanks.
+
+  Bug reports
+  -----------
+  If you want to help me out, email me a bug report.  Be as descriptive
+  as possible and tell me what exactly you were doing at the time
+  something went wrong.  If possible, send me a stack backtrace.
+
+  Wishes
+  ------
+  I can't possibly know what everyone wants, so I appreciate all feature
+  requests.
+
+  Graphics
+  --------
+  I am no artist.  If you think you can do a better job with any of the
+  QTParted graphics, then go right ahead!
+
+  Programming
+  -----------
+  Patches are welcome. Get to work!
+
+  Financial
+  ---------
+  You can send a paypal gift if you'd like, to bero(-at-)arklinux.org
+
+
+Have fun,
+-Vanni and Bero

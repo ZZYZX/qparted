@@ -1,0 +1,11 @@
+--- kde/admin/cvs.sh.org	2006-10-27 07:59:00.057543638 +0000
++++ kde/admin/cvs.sh	2006-10-27 07:59:38.666892277 +0000
+@@ -68,7 +68,7 @@
+     echo "*** KDE requires automake $required_automake_version"
+     exit 1
+     ;;
+-  automake*1.6.* | automake*1.7* | automake*1.8* | automake*1.9*)
++  automake*1.6.* | automake*1.7* | automake*1.8* | automake*1.9* | automake*1.10* )
+     echo "*** $AUTOMAKE_STRING found."
+     UNSERMAKE=no
+     ;;

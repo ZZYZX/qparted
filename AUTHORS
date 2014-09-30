@@ -1,0 +1,45 @@
+Vanni Brutto:
+QTParted program and Italian localization up to 0.4.4
+
+Bernhard Rosenkraenzer <bero at arklinux dot org>:
+Present maintainer
+
+François Dupoux
+Automake/autoconf porting, source code patch, beta testing
+
+Justin Karneges <infiniti-at-affinix.com>
+Author of the configure file of PSI (a very nice jabber client).
+I used him configure file as prototype for mine :)
+
+Crispin <crispin@veall.com>
+Splash screen and icons
+
+Ralf Nolden <nolden@kde.org>
+Fix of the Debian package
+
+Localization
+--------------
+Czech :
+    Radek Vybiral <Radek.Vybiral@vsb.cz>
+
+Finnish :
+    Tom Ingberg <tingberg@users.sourceforge.net>
+
+French :
+    Alain Portal <aportal@univ-montp2.fr>
+
+German :
+    Kai Lahmann <kl-at-3dots.de>
+
+Italian :
+    Vanni Brutto
+
+Polish :
+    <kaneda@bohater.org>
+
+Spanish :
+    David Rodríguez García <david-at-livux.com>
+    José "L. Redrejo"  <jredrejo-at-merida.uned.es>
+
+Swedish :
+    Daniel Nylander <dnylander@users.sourceforge.net>

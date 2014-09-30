@@ -1,0 +1,8 @@
+--- qtparted-0.4.5/data/qtparted.desktop~	2006-04-24 03:48:24.000000000 +0200
++++ qtparted-0.4.5/data/qtparted.desktop	2006-04-24 03:48:24.000000000 +0200
+@@ -9,4 +9,4 @@
+ Comment[fr]=Application pour partitionner un disque
+ Comment[fi]=Kiintolevyn partitiointityökalu
+ Encoding=UTF-8
+-Categories=Application;System;QT;
++Categories=Qt;System;Filesystem;

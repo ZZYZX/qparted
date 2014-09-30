@@ -1,0 +1,15 @@
+KNOW BUGS
+---------
+
+-. The Resize dialog is buggy when used in an extended partition. For example you can
+   shrink it to zero byte... even if there are some logical partitions inside! Of course
+   this is not a problem, 'cause libparted is not stupid and resize to the minimal size.
+-. Another problem of the Resize dialog is that with some filesystem (and also with
+   extended partitions) you can resize the partition on the left side.
+-. You cannot choose "move" partition with ext2. I don't understand why, but libparted
+   return a wrong value when i get ext2 info using ped_file_system_type_get_next. A
+   solution could be made a workaround for ext2!
+-. When you use the filesystem wrapper (for example you want to resize a NTFS partition)
+   the ProgressBar dialog don't work.
+-. The label entered in "create dialog" doesn't work. Actually it work only when you use
+   it creating NTFS o JFS partitions.
