@@ -1,3 +1,15 @@
 - Add btrfs support
 - Use mkfs.* tools instead of parted for filesystem creation
 - Remove remaining usage of Q3* compat classes
+
+- badblocks check
+- Add jfs resize support
+- Code clean up of the SpinBox widget
+- copy partition (not so trivial)
+- Bugfixes
+
+- get rid of Cmake (useless, doesnt check for libparted-dev anyway)
+- add qmake; fix the ui_ .h file error
+- clean up the code tree
+- change the icon to .svg, get rid of the raster files
+- add QT5 support
