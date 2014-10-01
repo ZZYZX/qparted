@@ -32,7 +32,6 @@ Description
    - badblocks check
    - Add jfs resize support
    - Code clean up of the SpinBox widget
-   - Get rid of Q3 compat class usage
    - copy partition (not so trivial) :(
    - Bugfixes :-)
 
