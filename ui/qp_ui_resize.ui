@@ -29,7 +29,7 @@
     <number>11</number>
    </property>
    <item>
-    <widget class="Q3Frame" name="container" >
+    <widget class="QFrame" name="container" >
      <property name="sizePolicy" >
       <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
        <horstretch>0</horstretch>
@@ -206,9 +206,9 @@
  <layoutdefault spacing="6" margin="11" />
  <customwidgets>
   <customwidget>
-   <class>Q3Frame</class>
+   <class>QFrame</class>
    <extends>QFrame</extends>
-   <header>Qt3Support/Q3Frame</header>
+   <header>Qt3Support/QFrame</header>
    <container>1</container>
   </customwidget>
   <customwidget>

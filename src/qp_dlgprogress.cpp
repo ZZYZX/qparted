@@ -38,7 +38,7 @@ QP_dlgProgress::~QP_dlgProgress() {
 
 void QP_dlgProgress::init_dialog() {
 	btnOk->setEnabled(false);
-	progressBar->setProgress(0);
+	progressBar->setValue(0);
 	lblState->setText(tr("Initializing"));
 	lblMessage->setText(QString::null);
 	lblTimeLeft->setText(QString::null);
@@ -60,7 +60,7 @@ void QP_dlgProgress::slotTimer(int percent, QString state, QString timeleft) {
 	tleft = QString(tr("Time Left: %1"))
 					.arg(timeleft);
 
-	progressBar->setProgress(percent);
+	progressBar->setValue(percent);
 	lblState->setText(state);
 	lblTimeLeft->setText(tleft);
 	qApp->processEvents();

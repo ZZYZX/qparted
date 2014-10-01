@@ -43,6 +43,7 @@
 
 using namespace std;
 
+
 QP_MainWindow *mainwindow;
 
 void print_usage(const char *program_name) {
@@ -114,7 +115,7 @@ int main(int argc, char *argv[]) {
 				print_usage(program_name);
 			}
 			break;
-				
+
 		case '?': // opzione invalida :(
 			print_usage(program_name);
 
@@ -146,7 +147,7 @@ int main(int argc, char *argv[]) {
 
 	mainwindow = new QP_MainWindow(&settings, 0);
 
-        QSplashScreen *splash=new QSplashScreen(QPixmap(DATADIR "/pics/qtp_splash.png"));
+        QSplashScreen *splash=new QSplashScreen(QPixmap(DATADIR "/pixmaps/qtp_splash.png"));
         splash->connect(mainwindow, SIGNAL(sigSplashInfo(const QString &)),
                         SLOT(message(const QString &)));
         splash->finish(mainwindow);
@@ -168,3 +169,4 @@ int main(int argc, char *argv[]) {
 
 	return rc;
 }
+

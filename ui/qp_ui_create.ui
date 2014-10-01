@@ -129,7 +129,7 @@
         <number>0</number>
        </property>
        <item>
-        <widget class="Q3ButtonGroup" name="grpPosition" >
+        <widget class="QGroupBox" name="grpPosition" >
          <property name="title" >
           <string>Position</string>
          </property>
@@ -294,9 +294,8 @@
  <layoutdefault spacing="6" margin="11" />
  <customwidgets>
   <customwidget>
-   <class>Q3ButtonGroup</class>
-   <extends>Q3GroupBox</extends>
-   <header>Qt3Support/Q3ButtonGroup</header>
+   <class>QGroupBox</class>
+   <header>QtGroupBox</header>
    <container>1</container>
   </customwidget>
   <customwidget>

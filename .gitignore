@@ -1,17 +1,8 @@
 # C++ objects and libs
-
-*.slo
-*.lo
-*.o
-*.a
-*.la
-*.lai
+*.[aod]
 *.so
-*.dll
-*.dylib
 
 # Qt-es
-
 /.qmake.cache
 /.qmake.stash
 *.pro.user
@@ -21,12 +12,9 @@ moc_*.cpp
 qrc_*.cpp
 ui_*.h
 Makefile*
-*-build-*
 
 # QtCreator
-
 *.autosave
 
-#QtCtreator Qml
-*.qmlproject.user
-*.qmlproject.user.*
+# The binary
+qtparted

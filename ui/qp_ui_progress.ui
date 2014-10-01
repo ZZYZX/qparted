@@ -120,8 +120,8 @@
       </widget>
      </item>
      <item>
-      <widget class="Q3ProgressBar" name="progressBar" >
-       <property name="progress" >
+      <widget class="QProgressBar" name="progressBar" >
+       <property name="value" >
         <number>50</number>
        </property>
       </widget>
@@ -185,9 +185,9 @@
  <pixmapfunction>qPixmapFromMimeSource</pixmapfunction>
  <customwidgets>
   <customwidget>
-   <class>Q3ProgressBar</class>
+   <class>QProgressBar</class>
    <extends>QFrame</extends>
-   <header>Qt3Support/Q3ProgressBar</header>
+   <header>QProgressBar</header>
   </customwidget>
  </customwidgets>
  <resources/>
