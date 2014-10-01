@@ -1,7 +1,7 @@
-QtParted
+QParted
 ===
 
-Forked from qtparted of version 0.6.0
+Visual partition editor based on Qt framework.
 
-HOMEPAGE: http://qtparted.sourceforge.net
+Forked from [qtparted v0.6.0](http://qtparted.sourceforge.net)
 
