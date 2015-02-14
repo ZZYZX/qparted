@@ -22,7 +22,7 @@
 #include <stdio.h>
 
 #include "qp_filesystem.h"
-#include "qtparted.h"
+#include "qparted.h"
 #include "qp_fswrap.h"
 
 #include "xpm/part_dos.xpm"

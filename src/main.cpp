@@ -1,5 +1,5 @@
 /*
-	qtparted - a frontend to libparted for manipulating disk partitions
+	qparted - a frontend to libparted for manipulating disk partitions
 	Copyright (C) 2002-2003 Vanni Brutto
 
 	Vanni Brutto <zanac (-at-) libero dot it>
@@ -18,13 +18,6 @@
 	along with this program; if not, write to the Free Software
 	Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
-
-/* About main.cpp
- *
- * This is the begin... and the end! :) :)
- *
- * Of course i'm joking! Here QTParted create the mainwindow and show it.
- */
 
 #include <getopt.h>
 #include <QApplication>
@@ -49,7 +42,7 @@ QP_MainWindow *mainwindow;
 void print_usage(const char *program_name) {
 	cout << "Usage: " << program_name << " [OPTION]..." << endl
 		 << "A nice QT GUI for libparted" << endl << endl
-		 << "Options used by qtparted:" << endl
+		 << "Options used by qparted:" << endl
 		 << "  -l, --log=value	   use 1 to enable log, 0 for disable it." << endl
 		 << "						[default = 1])" << endl
 		 << "  -h, --help			Show this usage message" << endl
@@ -61,7 +54,7 @@ void print_usage(const char *program_name) {
 
 
 int main(int argc, char *argv[]) {
-// This allows to run QtParted with QtEmbedded without having
+// This allows to run QParted with QtEmbedded without having
 // to pass parameters "-qws".
 // This is, however, potentially harmful, for example if we're being launched
 // from another QWS application (OPIE, Ark Linux installer, .....) - so we
@@ -91,10 +84,10 @@ int main(int argc, char *argv[]) {
 	};
 
 	do {
-		next_option = getopt_long(argc, 
-					  argv, 
-					  short_options, 
-					  long_options, 
+		next_option = getopt_long(argc,
+					  argv,
+					  short_options,
+					  long_options,
 					  NULL);
 
 		switch (next_option) {
@@ -129,12 +122,12 @@ int main(int argc, char *argv[]) {
 
 	/*---install translation file for application strings---*/
 	QTranslator *translator = new QTranslator(0);
-	translator->load(QString("qtparted_"+QLocale::system().name()), QString(DATADIR "/locale"));
+	translator->load(QString("qparted_"+QLocale::system().name()), QString(DATADIR "/locale"));
 	app.installTranslator(translator);
 
 	/*---initialize the debug system---*/
 	if (iLog) g_debug.open();
-	showDebug("QtParted debug logfile (http://qtparted.sf.net) version %s\n---------\n", VERSION);
+	showDebug("QParted debug logfile (https://github.com/ZZYZX/qparted) version %s\n---------\n", VERSION);
 
 	/*---check the Parted version---*/
 	if (!QP_LibParted::checkForParted())

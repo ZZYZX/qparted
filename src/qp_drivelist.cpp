@@ -1,5 +1,5 @@
 /*
-    qtparted - a frontend to libparted for manipulating disk partitions
+    qparted - a frontend to libparted for manipulating disk partitions
     Copyright (C) 2002-2003 Vanni Brutto <zanac (-at-) libero dot it>
     Copyright (C) 2007-2008 David Tio <deux (-at-) arklinux.org>
 
@@ -49,7 +49,7 @@ QP_DriveList::QP_DriveList(QWidget *parent, QP_Settings *settings)
     connect(this, SIGNAL(customContextMenuRequested(QPoint const &)), this, SLOT(slotPopUp()));
 }
 
-QP_DriveList::~QP_DriveList() { 
+QP_DriveList::~QP_DriveList() {
 }
 
 void QP_DriveList::setPopup(QMenu *popup) {
@@ -65,18 +65,18 @@ void QP_DriveList::buildView() {
     /*---get a list of all available devices---*/
     devlist->getDevices();
 
-    //QStrList lstdrives = QP_LibParted::device_probe();    
+    //QStrList lstdrives = QP_LibParted::device_probe();
     if (devlist->devlist.count() == 0) {
-        QMessageBox::information(this, "QTParted",
+        QMessageBox::information(this, "QParted",
                 QString(tr("No device found. Maybe you're not using root user?")));
     }
 
     /*---make the group menu---*/
-    _agDevices = new QActionGroup(this);   
+    _agDevices = new QActionGroup(this);
     _agDevices->setExclusive(true);
     connect(_agDevices, SIGNAL(selected(QAction *)), this, SLOT(slotActionSelected(QAction *)));
 
-    /*---add every device found---*/    
+    /*---add every device found---*/
     foreach(QP_Device* p, devlist->devlist)
     {
         /*---get the device name---*/
@@ -85,7 +85,7 @@ void QP_DriveList::buildView() {
         /*---add to the listview---*/
         QTreeWidgetItem *item = addDevice(st, ideRoot);
 
-        /*---add to the group menu---*/	
+        /*---add to the group menu---*/
 	QAction *actDisk = new QAction(QIcon(tool_disk), st, _agDevices);
         actDisk->setCheckable(true);
 

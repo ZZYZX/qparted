@@ -1,6 +1,6 @@
 /*
-    qtparted - a frontend to libparted for manipulating disk partitions
-    Copyright (C) 2002-2003 Vanni Brutto
+    qparted - a frontend to libparted for manipulating disk partitions
+    Copyright (C) 2002-2003 Vanni Brutto; 2015- ZZYZX
 
     Vanni Brutto <zanac (-at-) libero dot it>
 
@@ -18,12 +18,6 @@
     along with this program; if not, write to the Free Software
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 */
-
-/* About qp_common.cpp
- *
- * Just a couple of string... for now! :)
- *
- */
 
 #include <qstring.h>
 #include "qp_exttools.h"

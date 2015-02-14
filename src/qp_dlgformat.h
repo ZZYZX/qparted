@@ -1,6 +1,6 @@
 /*
-    qtparted - a frontend to libparted for manipulating disk partitions
-    Copyright (C) 2002-2003 Vanni Brutto
+    qparted - a frontend to libparted for manipulating disk partitions
+    Copyright (C) 2002-2003 Vanni Brutto; 2015- ZZYZX
 
     Vanni Brutto <zanac (-at-) libero dot it>
 
@@ -30,7 +30,7 @@
 #ifndef QP_DLGFORMAT_H
 #define QP_DLGFORMAT_H
 
-#include "qtparted.h"
+#include "qparted.h"
 #include "ui_qp_ui_format.h"
 #include "qp_libparted.h"
 

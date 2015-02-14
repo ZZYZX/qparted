@@ -1,5 +1,5 @@
 /*
-	qtparted - a frontend to libparted for manipulating disk partitions
+	qparted - a frontend to libparted for manipulating disk partitions
 	Copyright (C) 2002-2003 Vanni Brutto <zanac (-at-) libero dot it>
 	Copyright (C) 2010-2011 Bernhard Rosenkraenzer <bero (-at-) arklinux dot ch>
 

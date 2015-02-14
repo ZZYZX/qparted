@@ -1,5 +1,5 @@
 #    qparted - a frontend to libparted for manipulating disk partitions
-#    Copyright (C) 2002-2003 Vanni Brutto
+#    Copyright (C) 2002-2003 Vanni Brutto; 2015- ZZYZX
 #
 #    Vanni Brutto <zanac (-at-) libero dot it>
 #
@@ -41,7 +41,7 @@ unix:LIBS   += -ldl -lparted
 TARGET       = qparted
 
 # Header files
-HEADERS      = src/qtparted.h          \
+HEADERS      = src/qparted.h           \
                src/qp_common.h         \
                src/qp_settings.h       \
                src/qp_exttools.h       \
@@ -115,18 +115,22 @@ FORMS        = ui/qp_ui_create.ui       \
 
 
 # Translations
-TRANSLATIONS = ts/qtparted_ca.ts        \
-               ts/qtparted_cs.ts        \
-               ts/qtparted_de.ts        \
-               ts/qtparted_es.ts        \
-               ts/qtparted_fi.ts        \
-               ts/qtparted_fr.ts        \
-               ts/qtparted_it.ts        \
-               ts/qtparted_pl.ts        \
-               ts/qtparted_ru.ts        \
-               ts/qtparted_sv.ts        \
-               ts/qtparted_ua.ts
+TRANSLATIONS = ts/qparted_ca.ts        \
+               ts/qparted_cs.ts        \
+               ts/qparted_de.ts        \
+               ts/qparted_es.ts        \
+               ts/qparted_fi.ts        \
+               ts/qparted_fr.ts        \
+               ts/qparted_it.ts        \
+               ts/qparted_pl.ts        \
+               ts/qparted_ru.ts        \
+               ts/qparted_sv.ts        \
+               ts/qparted_ua.ts
 
 # Tidy
 QMAKE_CLEAN += $(TARGET) $(QMAKE_TARGET)
 
+# Install
+QPARTED.path = /usr/bin
+QPARTED.files = qparted
+INSTALLS += QPARTED
